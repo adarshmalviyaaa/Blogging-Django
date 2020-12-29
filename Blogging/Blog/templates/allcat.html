@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <a href="{% url 'logout' %}"><button>Logout</button></a>
+    <h1>All Category</h1>
+    <a href="{% url 'add_cat' %}"><button>Add Category</button></a>
+    {% for i in allcat %}
+    <h3><a href="{% url 'cdetail' i.id %}">{{ i.name }}</a></h3>
+    {% endfor %}
+
+</center>
+</body>
+</html>

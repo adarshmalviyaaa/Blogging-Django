@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h1>{{ request.user.first_name }} Edit {{ blogdata.title }} Blog</h1>
+   {% if blogdata.image %}
+    <img src="{{ blogdata.image.url }}" height="100px;" width="100px;">
+    <br><br>
+    {% else %}
+    <h3>No Image</h3>
+    {% endif %}
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <select name="cat">
+            <option>Select Category</option>
+            {% for i in allcategory %}
+            {% if i.id == blogdata.cat.id %}
+            <option value="{{ i.id }}" selected>{{ i.name }}</option>
+            {% else %}
+             <option value="{{ i.id }}" >{{ i.name }}</option>
+            {% endif %}
+            {% endfor %}
+
+        </select><br><br>
+        <input type="text" placeholder="Title" name="bname" value="{{blogdata.title}}"/><br><br>
+        <textarea placeholder="Short Description"  name="short"
+        style="height:100px;">{{ blogdata.sdes }}</textarea><br><br>
+        <textarea placeholder="Long Description"
+                  name="long" style="height:100px;">{{ blogdata.long_des }}</textarea><br><br>
+
+        <input type="file"  name="img"><br><br>
+
+        <input type="submit" value="Edit Details">
+    </form>
+</center>
+</body>
+</html>

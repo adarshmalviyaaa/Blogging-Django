@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h1>Detail of {{ student.name }}</h1>
+    <h2>data by filter</h2>
+    {% for i in filterdata %}
+    <h3>{{ i.name }}--{{ i.branch }}</h3>
+    {% endfor %}
+    <a href="{% url 'alls' %}"><button>All Student</button></a>
+<a href="{% url 'Add' 2 6  %}"><button>Addition</button></a>
+
+</center>
+</body>
+</html>

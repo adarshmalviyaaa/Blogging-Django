@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+<h1>List Of Student</h1>
+    {% for i in studentdata %}
+    <li><a href="{% url 'sdetail' i.id  %}">{{ i.name }}</a></li>
+    {% endfor %}
+    </center>
+</body>
+</html>

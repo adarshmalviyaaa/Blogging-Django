@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h1>{{ request.user.first_name }} Add New Blog</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <select name="cat">
+            <option>Select Category</option>
+            {% for i in allcategory %}
+            <option value="{{ i.id }}">{{ i.name }}</option>
+            {% endfor %}
+
+        </select><br><br>
+        <input type="text" placeholder="Title" name="bname"><br><br>
+        <textarea placeholder="Short Description"  name="short"
+        style="height:100px;"></textarea><br><br>
+        <textarea placeholder="Long Description"
+                  name="long" style="height:100px;"></textarea><br><br>
+        <input type="file" name="img"><br><br>
+        <input type="submit" value="Add Blog">
+    </form>
+</center>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6c5b972-31bc-43a0-8033-75e749dce48f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hMvaP271nsLbN1q2E11d4QzxCL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Blog/templates/newtemp" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Blog/templates/newtemp" />
+      <recent name="$PROJECT_DIR$/Blog/static" />
+      <recent name="$PROJECT_DIR$/Blog/templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Blogging" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Blog" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Blog/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6c5b972-31bc-43a0-8033-75e749dce48f" name="Default Changelist" comment="" />
+      <created>1599833838871</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599833838871</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="423" y="255" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599834166325">
+      <screen x="35" y="23" width="1405" height="877" />
+    </state>
+    <state x="423" y="255" key="#com.intellij.fileTypes.FileTypeChooser/35.23.1405.877@35.23.1405.877" timestamp="1599834166325" />
+    <state width="1414" height="558" key="GridCell.Tab.0.bottom" timestamp="1600449133079">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1414" height="558" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600449133079" />
+    <state width="1414" height="558" key="GridCell.Tab.0.center" timestamp="1600449133077">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1414" height="558" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600449133077" />
+    <state width="1414" height="558" key="GridCell.Tab.0.left" timestamp="1600449133071">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1414" height="558" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600449133071" />
+    <state width="1414" height="558" key="GridCell.Tab.0.right" timestamp="1600449133078">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1414" height="558" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600449133078" />
+    <state x="36" y="23" width="1229" height="877" key="SettingsEditor" timestamp="1599916171615">
+      <screen x="36" y="23" width="1404" height="877" />
+    </state>
+    <state x="36" y="23" width="1229" height="877" key="SettingsEditor/36.23.1404.877@36.23.1404.877" timestamp="1599916171615" />
+  </component>
+</project>
