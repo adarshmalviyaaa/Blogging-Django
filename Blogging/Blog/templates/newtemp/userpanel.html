@@ -14,7 +14,9 @@
       </div>
     </section>
 
-
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="{% url 'add_blog' %}"><button class="btn btn-black py-2">Add Blog</button></a>
+                </div>
     <section class="ftco-section">
     	<div class="container">
         <div class="row">
@@ -25,14 +27,13 @@
     						<div class="blog-entry">
 		    					<a href="{% url 'bdetail' i.id %}" class="img-2"><img src="{{ i.image.url }}" class="img-fluid" alt="Colorlib Template"></a>
 			    				<div class="text pt-3">
-	    							<p class="meta d-flex"><span class="pr-3">{{ i.usr.first_name }}</span><span class="ml-auto pl-3">March 01, 2018</span></p>
+	    							<p class="meta d-flex"><span class="pr-3">{{ i.usr.first_name }}</span><span class="ml-auto pl-3">{{ i.date }}</span></p>
 	    							<h3><a href="{% url 'bdetail' i.id %}">{{ i.title }}</a></h3>
 	    							<p class="mb-0"><a href="{% url 'bdetail' i.id %}" class="btn btn-black py-2">Read More <span class="icon-arrow_forward ml-4"></span></a></p>
 	    						</div>
 		    				</div>
     					</div>
 					{% endfor %}
-
 
 
 
@@ -60,7 +61,7 @@
 			          <h2 class="heading mb-4">{{ request.user.first_name }}</h2>
 			          <img src="{{ userdata.image.url }}" class="img-fluid" alt="Colorlib Template">
 			          <div class="text pt-4">
-			          	<p>Hi! My name is <strong>Cathy Deon</strong>, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+			          	<p>Hi! My name is <strong>{{ request.user.first_name }}</strong>, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 			          </div>
 	        		</div>
 	        		<div class="sidebar-box p-4 ftco-animate">

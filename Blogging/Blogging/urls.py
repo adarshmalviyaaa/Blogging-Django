@@ -49,7 +49,7 @@ urlpatterns = [
     path('UserPanel', Userpanel, name='upanel'),
     path('logout/', LogoutUser, name='logout'),
      path('Signup/', Signup, name='signup'),
-    path('Edit_blog/<int:bid>/', Edit_blog, name='edit_b'),
+    path('Edit_blog/<int:bid>/', Edit_blog, name='editb'),
 path('delete_blog/<int:bid>/', DeleteData, name='delete_b'),
 
 ################# New URLs ######################

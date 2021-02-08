@@ -45,7 +45,10 @@
               </div>
             </div>
 
-
+            <div>
+                 <a href="{% url 'editb' detail.id  %}"><button class="btn btn-black py-2">Edit Blog</button></a>
+                <a href="{% url 'delete_b' detail.id %}"><button class="btn btn-black py-2">Delete</button></a>
+            </div>
             <div class="pt-5 mt-5">
               <h3 class="mb-5">{{ detail.usercomment_set.count }} Comments</h3>
               <ul class="comment-list">

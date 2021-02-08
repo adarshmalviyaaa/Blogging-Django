@@ -37,6 +37,7 @@ class LikeBlog(models.Model):
 
 
 
+
 class UserDetail(models.Model):
     usr = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     mobile = models.CharField(max_length=100,null=True)

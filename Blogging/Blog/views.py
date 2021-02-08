@@ -135,9 +135,10 @@ def AddBlog(request):
                                  long_des =long,
                                  image = img,
                                  date = td)
-        return redirect('cdetail',catid)
+        return redirect( 'upanel')
 
-    return render(request,'add_blog.html',d)
+
+    return render(request,'newtemp/blog_add.html',d)
 
 
 
@@ -173,7 +174,7 @@ def Signup(request):
 
 
     dic = {"error":error}
-    return render(request,'signup.html',dic)
+    return render(request,'newtemp/sign.html',dic)
 
 
 def Edit_blog(request,bid):
@@ -208,7 +209,7 @@ def Edit_blog(request,bid):
         blogdata.cat = catdata
         blogdata.save()
     d = {"blogdata":blogdata,"allcategory":allcategory}
-    return render(request,'blog_edit.html',d)
+    return render(request,'newtemp/edit.html',d)
 
 
 def DeleteData(request,bid):

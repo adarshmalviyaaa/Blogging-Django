@@ -2,7 +2,10 @@
 {% block body %}
 {% load static  %}
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_4.jpg');">
+      <script type="text/javascript">var submitted=false;</script>
+
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='http://127.0.0.1:8000/contact/';}"></iframe>
+    <section class="hero-wrap hero-wrap-2" style="background-image: url("{% static 'images/bg_3.jpg' %}");">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
@@ -18,18 +21,18 @@
       <div class="container">
         <div class="row block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-5 contact-form">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSetsUygUbm7RtQl3TXWCFJPQ4E96lg2krXeQGUt8BkC5tQe7A/formResponse" class="bg-light p-5 contact-form" target="hidden_iframe" onsubmit="submitted=true" method="post">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+                <input type="text" class="form-control" placeholder="Your Name" name="entry.2036167233">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+                <input type="email" class="form-control" placeholder="Your Email" name="entry.1784730447">
+              </div>
+                <div class="form-group">
+                <input type="tel" pattern="[6-9][0-9]{9}" class="form-control" placeholder="Your Number" name="entry.468934749">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <input type="text" class="form-control" placeholder="Message" name="entry.1075258936">
               </div>
               <div class="form-group">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
@@ -87,4 +90,5 @@
         </div>
       </div>
     </section>
+
 {% endblock %}
