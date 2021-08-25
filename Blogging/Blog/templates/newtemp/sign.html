@@ -32,17 +32,17 @@
 
                <form action="" method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        <input type="text" placeholder="Enter Full Name" name="fname">
+        <input type="text" pattern="\w+\s+\w+" title="Please enter first name and last name" placeholder="Enter Full Name" name="fname" required>
         <br><br>
-        <input type="email" placeholder="Email" name="email">
+        <input type="email" placeholder="Email" name="email" required>
         <br><br>
-        <input type="number" placeholder="Mobile Number" name="mob">
+        <input type="number" placeholder="Mobile Number" title="Enter a valid mobile number" pattern="^[6789]\d{9}$" name="mob" required>
         <br><br>
-        <input type="file"  name="img">
+        <input type="file"  name="img" required>
         <br><br>
-        <input type="text" placeholder="Username" name="uname">
+        <input type="text" placeholder="Username" name="uname" required>
         <br><br>
-        <input type="password" placeholder="Password" name="pwd">
+        <input type="password" minlength="8" placeholder="Password" name="pwd" required>
         <br><br>
         <input type="submit" value="Signup">
 

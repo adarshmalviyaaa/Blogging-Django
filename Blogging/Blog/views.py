@@ -156,7 +156,10 @@ def Signup(request):
         d = request.POST
         full = d['fname'].split()
         first = full[0]
-        last = full[1]
+        if full[1]:
+            last = full[1]
+        else:
+            last = ""
         mob = d['mob']
         em = d['email']
         u = d['uname']
@@ -250,6 +253,7 @@ def Newblogdetail(request,bid):
     comments = UserComment.objects.filter(blog = data)
     n = comments.count()
     d = {"detail":data,"userdata":userdata,"count":n}
+    print(d["userdata"])
     return render(request,'newtemp/single.html',d)
 
 
@@ -286,6 +290,7 @@ def Userpanel(request):
     return render(request, 'newtemp/userpanel.html',d)
 
 def LoginForm(request):
+    d = { "wro": "hello"}
     if request.method == "POST":
         dic = request.POST
         u = dic['user']
@@ -297,9 +302,11 @@ def LoginForm(request):
                  return redirect('allc')
             return redirect('newhome')
         else:
-            return HttpResponse("User Not Found")
+            d = {"wrong": "hello"}
+            # return HttpResponse("User Not Found or Incorrect Password")
 
-    return render(request,'newtemp/login.html')
+
+    return render(request,'newtemp/login.html',d)
 
 
 

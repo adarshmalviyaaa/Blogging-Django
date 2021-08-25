@@ -21,10 +21,12 @@
             <h2 class="mb-3">{{ detail.title }}
 
             </h2>
+          {% if request.user.first_name %}
             <p><b>{{ detail.likeblog_set.count }} <a href="{% url 'like' detail.id %}"> <i class="fa fa-thumbs-up" style="font-size:25px;"></i></a></b>
 
 
             </p>
+          {% endif %}
 
             <p>{{ detail.sdes }}</p>
             <p>
@@ -44,11 +46,12 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
               </div>
             </div>
-
+    {% if request.user.first_name == detail.usr.first_name %}
             <div>
                  <a href="{% url 'editb' detail.id  %}"><button class="btn btn-black py-2">Edit Blog</button></a>
                 <a href="{% url 'delete_b' detail.id %}"><button class="btn btn-black py-2">Delete</button></a>
             </div>
+          {% endif %}
             <div class="pt-5 mt-5">
               <h3 class="mb-5">{{ detail.usercomment_set.count }} Comments</h3>
               <ul class="comment-list">
